@@ -1,0 +1,10 @@
+# Site settings
+title: Anthony's Website
+email: apage516@gmail.com
+description: Anthony likes furry animals.
+url: theanthonypage.github.io
+github_username: theanthonypage
+
+# Build settings
+markdown: kramdown
+permalink: pretty
