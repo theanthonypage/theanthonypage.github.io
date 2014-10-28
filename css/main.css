@@ -1,3 +1,6 @@
+---
+fav-color: #FFFF00
+---
 
 body {
   background:black;
@@ -11,7 +14,7 @@ p {
 }
 
 span {
-  color:yellow;
+  color:{{page.fav-color}};
 }
 
 
