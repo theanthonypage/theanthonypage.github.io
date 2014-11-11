@@ -1,13 +1,14 @@
 <header class="site-header cf">
-            <div class="container">
-                <a class="site-title" href="#">{{ site.title }}</a>
-                <nav class="navbar">
-                    <ul class="header-nav">
-                        <li><a class="nav-link" href="#">Blog</a></li>
-                        <li><a class="nav-link" href="#">About me</a></li>
-                        <li><a class="nav-link" href="#">Portfolio</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </nav>
-           </div> <!-- / container -->
-        </header><!-- / header -->
+    <div class="container">
+        <a class="site-title" href="#">{{ site.title }}</a>
+        <nav class="navbar">
+            <ul class="header-nav">
+                {% for nav in site.pages %}
+                    {% if nav.title %}
+                        <li><a class="nav-link{% if nav.title == page.title %} active{% endif %}" href="{{ nav.url }}">{{ nav.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div> <!-- / container -->
+</header><!-- / header -->
