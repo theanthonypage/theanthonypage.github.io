@@ -143,6 +143,11 @@ a:hover {
 	color:#005252;
 }
 
+.nav-link.active {
+	background-color:white;
+	color:#005252;
+}
+
 /* Columns */
 
 @media (min-width:620px){
