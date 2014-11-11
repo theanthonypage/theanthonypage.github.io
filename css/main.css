@@ -144,8 +144,13 @@ a:hover {
 }
 
 .nav-link.active {
-	background-color:red;
+	background-color:tomato;
 	color:white;
+}
+
+.nav-link.active:hover {
+	background-color:white;
+	color:tomato;
 }
 
 /* Columns */
