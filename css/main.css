@@ -167,6 +167,9 @@ a:hover {
 	text-indent:1em;
 }
 
+.col-head {
+	text-align:center;
+}
 
 .site-footer {
 	margin-top:3em;
