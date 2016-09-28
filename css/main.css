@@ -54,7 +54,7 @@ p {
 	text-align:center;
 }
 
-@media(max-width:600px) {
+@media(max-width:700px) {
 	.container {
 		width:100%;
 	}
