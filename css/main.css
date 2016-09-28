@@ -195,6 +195,12 @@ a:hover {
 	font-size:.8em;
 }
 
+.coming-soon {
+	width:500px;
+	margin:3.5em auto 0 auto;
+}
+
+
 @media(max-width:500px) {
 	.main-logo {
 		width:100%;
@@ -204,6 +210,7 @@ a:hover {
 	}
 	.bullet-thing {
 		font-size:2.5em;
+		padding:.5em;
 	}
 	.bullet {
 		font-size:.5em;
@@ -226,12 +233,6 @@ a:hover {
 		padding:1em;
 	}
 }
-
-.coming-soon {
-	width:500px;
-	margin:3.5em auto 0 auto;
-}
-
 /* ------- MAIN CONTENT -------- */
 
 .page-title {
