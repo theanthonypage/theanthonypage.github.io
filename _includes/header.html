@@ -1,14 +1,25 @@
+
 <header class="site-header cf">
-    <div class="container">
-        <a class="site-title" href="{{site.url}}">{{ site.title }}</a>
+<div class="header-bar">
+<a class="site-title" href="http://cassanoristorante.github.io"><img class="site-logo" src="/images/logowhite.png" alt="Cassano Logo"></a>
         <nav class="navbar">
-            <ul class="header-nav">
-                {% for nav in site.pages %}
-                    {% if nav.title %}
-                        <li><a class="nav-link{% if nav.title == page.title %} active{% endif %}" href="{{ nav.url }}">{{ nav.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
+            <ul class="main-nav">
+                <li><a class="nav-link{% if page.title == "Menus" %} active{% endif %}" href="#">MENUS</a></li>
+                <li><a class="nav-link{% if page.title == "About" %} active{% endif %}" href="#">ABOUT</a></li>
+                <li><a class="nav-link three{% if page.title == "Gallery" %} active{% endif %}" href="#">GALLERY</a></li>
+                <li><a class="nav-link one{% if page.title == "Reservations" %} active{% endif %}" href="#">RESERVATIONS</a></li>
             </ul>
         </nav>
-    </div> <!-- / container -->
-</header><!-- / header -->
+  <div class="social-media">
+  	<a class="social-link" href="https://www.facebook.com/CassanoRistorante" target="_blank"><img src="/images/facebook.png"></a>
+  	<a class="social-link" href="https://www.instagram.com/cassanoristorante/?hl=en" target="_blank"><img src="/images/instagram.png"></a>
+  </div>
+</div>
+<div class="banner-contain cf">
+<img class="main-image cf" src="/images/mainimage.jpeg">
+	<div class="main-logo-holder">
+		<img class="main-logo cf" src="/images/centerlogo.png">
+	</div>
+</div>
+</header>
+
