@@ -181,6 +181,13 @@ a:hover {
 	max-width:500px;
 }
 
+@media(max-width:600px){
+	.main-logo {
+		max-width:100%;
+		padding:0 1em;
+	}
+}
+
 /* -------- COMING SOON PAGE -------- */
 
 
