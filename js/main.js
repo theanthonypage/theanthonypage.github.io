@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+
 // HERO IMAGE
 
 function fullscreen(){
@@ -31,11 +32,23 @@ function fullscreen2(){
        fullscreen2();         
     });
 
+
 // CASSANO LINK ONCLICK SCROLL TO TOP
 
 $('.site-title').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 600);
 });
+
+
+// MASONRY GRID INITIALIZE
+
+$(window).on('load', function() {
+  $('#grid').masonry({
+    // options
+   itemSelector: '.grid-item'
+  });
+});
+
 
 /* ------ LOAD LUNCH OR DINNER MENU BASED ON TIME OF DAY ------- */
 
@@ -75,19 +88,35 @@ $('.menu-link').click(function(){
 		$(target).load('/catering-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-	} else{
+	} else {
 		$(target).load('/wine-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
 	}
  });
 
-$(window).on('load', function() {
-	$('#grid').masonry({
-  	// options
- 	 itemSelector: '.grid-item'
-	});
+
+// LOAD MOBILE MENUS ON CLICK
+
+$("#menu-select").change(function() {
+  var whichMenu = $(this).val();
+  console.log(whichMenu);
+  target = ('#target');
+  if (whichMenu == 'lunch'){
+    $(target).load('/lunch-menu.html');
+} else if (whichMenu == 'dinner'){
+    $(target).load('/dinner-menu.html');
+} else if (whichMenu == 'bar'){
+    $(target).load('/bar-menu.html');
+} else if (whichMenu == 'catering'){
+    $(target).load('/catering-menu.html');
+} else {
+    $(target).load('/wine-menu.html');
+}
+
 });
+
+// MOBILE NAV FUNCTIONALITY
 
 $('.hamburger').click(function(){
 	$('.mobile-nav').animate({width:'toggle'},500);
@@ -108,49 +137,23 @@ $('.m-nav-link').click(function(){
 });
 
 
-// ACTIVE STATE TRIGGER FOR NAV LINKS
+// LOAD GALLERY ON SCROLL PAST WAYPOINT
 
-// $(window).scroll(function(){
-//   if($(window).scrollTop() == 
-// })
+var waypoint = new Waypoint({
+  element: document.getElementById('gallery'),
+  handler: function() {
+    target = ('#gallery-target');
+    $(target).load('/gallery.html');
+  },
+  offset: 225
+});
 
+// LOAD GALLERY ON LINK CLICK
 
-// TRIGGER MENUS BUTTON ON SCROLLTOP
-
-// var menu = $('#menu');
-// var button = $('.menus-button');
-
-// $(window).scroll(function() {
- //   var element_position = $(menu).offset().top
-  //  y_scroll_pos = window.pageYOffset,
- //   scroll_pos_test = element_position,
- //   hT = $(menu).offset().top,
- //   hH = $(menu).outerHeight(),
-//    wH = $(window).height(),
-//    wS = $(this).scrollTop(),
-//    bT = $(menu).position().top + $(menu).outerHeight(true);
-    
-//    if(y_scroll_pos > scroll_pos_test) {
-//        $(button).css('visibility', 'visible');
-//    }
-
-//});
-
-//$(window).scroll(function () {
-
-//var triggerPos = $('#trigger').offset().top;
-//var trigger2Pos = $('#trigger2').offset().top;
-
-//if($(window).scrollTop() > (triggerPos)){
-  //     $(".menu-button").css('visibility', 'visible');
-  //  }
-  //  else if($(window).scrollTop() > (trigger2Pos)){
-  //      $(".menu-button").css('visibility', 'hidden');
-  //  }
-  //  else {
-  //      $(".menu-button").css('visibility', 'hidden');
-  //  }
-//});
+$('.gallery-click').click(function(){
+  var target = ('#gallery-target');
+  $(target).load('/gallery.html');
+});
 
 // NAV LOGO APPEARS AFTER SCROLL PAST MAIN LOGO
 
@@ -199,7 +202,7 @@ slider();
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
       $('html, body').animate({
-        scrollTop: target.offset().top - 75
+        scrollTop: target.offset().top - 100
       }, scrollSpeed);
       return false;
     }
@@ -257,10 +260,53 @@ $('.m-nav-link').click(function() {
             if (!$("nav li:last-child a").hasClass("activate")) {
                 var navActiveCurrent = $(".activate").attr("href");
                 $("a[href='" + navActiveCurrent + "']").removeClass("activate");
-                $("nav li:last-child a").addClass("activate");
+                $("nav li:last-child a").not('.mobile-nav > li').addClass("activate");
             }
         }
     });
 
+// DATE PICKER
+
+$('.datepicker-here').datepicker({
+    language: 'en',
+    minDate: new Date() // Now can select only dates, which goes after today
+})
+
+$('.datepicker-here').datepicker({
+        onSelect: function (fd, d, picker) {
+            // Do nothing if selection was cleared
+            console.log(fd);
+            //if (!d) return;
+
+            var day = d.getDay();
+            var monFri = $('.mon-fri');
+            var monSat = $('.mon-sat');
+            var friSat = $('.fri-sat');
+            console.log(day);
+            if (day > 0 && day < 5){
+              $(monFri).css('display', 'block');
+              $(monSat).css('display', 'block');
+              $(friSat).css('display', 'none');
+            } else if (day == 5) {
+              $(friSat).css('display', 'block');
+              $(monSat).css('display', 'block');
+            } else if (day == 6){
+              $(monFri).css('display', 'none');
+              $(monSat).css('display', 'block');
+              $(friSat).css('display', 'block');
+            } else if (day == 0) {
+              $(monFri).css('display', 'none');
+              $(friSat).css('display', 'none');
+              $(monSat).css('display', 'none');
+            }
+        }
+    });
+
+
+
+
+
+
+///// END OF CODE - CLOSING TAG BENEATH
 
 });
