@@ -151,7 +151,7 @@ $("#menu-select").change(function() {
     $(target).load('/bar-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
-        $('#menu').css('min-height','1590px');
+        $('#menu').css('min-height','1800px');
       } else { 
         $('#menu').css('min-height','2400px');
       }
@@ -159,8 +159,15 @@ $("#menu-select").change(function() {
       $('#menu').css('min-height','1200px');
     }
 } else if (whichMenu == 'catering'){
-    $(target).load('/catering-menu.html');
-    $('#menu').css('min-height','1310px');
+    if (window.matchMedia('(max-width: 870px)').matches){
+      if (window.matchMedia('(min-width: 350px)').matches){
+        $('#menu').css('min-height','1500px');
+      } else { 
+        $('#menu').css('min-height','1700px');
+      }
+    } else {
+      $('#menu').css('min-height','1200px');
+    }
 } else {
     $(target).load('/wine-menu.html');
 }
