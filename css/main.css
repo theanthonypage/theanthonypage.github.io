@@ -264,13 +264,13 @@ a:hover {
     margin: -.25em 0 0 .5em;
     max-width:165px;
     display:none;
-} */
+}
 
 .navbar {
 	margin-top:2.5em;
 	margin-left:12%;
 	display:inline-block;
-}
+} */
 
 .main-nav li {
 	display:inline-block;
@@ -290,7 +290,7 @@ a:hover {
 	padding-bottom:.5px;
 }
 
-.social-media {
+/* .social-media {
 	float:right;
 	padding-right:30px;
 	padding-left:0;
@@ -302,7 +302,7 @@ a:hover {
 	max-width:38px;
 }
 
-/* #hero {
+ #hero {
 	background-image:url(/images/mainimage.jpg);
   	background-size:cover;
   	position:relative;
