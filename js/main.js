@@ -60,7 +60,7 @@ if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
   if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5500px');
+        $('#menu').css('min-height','5600px');
     } else { 
         $('#menu').css('min-height','3150px');
     }
@@ -68,7 +68,7 @@ if (time < 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
   if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5100px');
+        $('#menu').css('min-height','5200px');
     } else { 
         $('#menu').css('min-height','3082px');
     }
@@ -87,7 +87,7 @@ $('.menu-link').click(function(){
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5500px');
+        $('#menu').css('min-height','5600px');
     } else { 
         $('#menu').css('min-height','3150px');
       }
@@ -96,7 +96,7 @@ $('.menu-link').click(function(){
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5100px');
+        $('#menu').css('min-height','5200px');
     } else { 
         $('#menu').css('min-height','3082px');
       }
@@ -131,14 +131,14 @@ $("#menu-select").change(function() {
   if (whichMenu == 'lunch'){
     $(target).load('/lunch-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5500px');
+        $('#menu').css('min-height','5600px');
     } else { 
         $('#menu').css('min-height','3150px');
       }
 } else if (whichMenu == 'dinner'){
     $(target).load('/dinner-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5100px');
+        $('#menu').css('min-height','5200px');
     } else { 
         $('#menu').css('min-height','3082px');
       }
