@@ -33,13 +33,13 @@ if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
   $('#lunch-m').append($('<option>', {
-    selected: selected;
+    selected: selected
   }));
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
   $('#dinner-m').append($('<option>', {
-    selected: selected;
+    selected: selected
   }));
   if (window.matchMedia('(max-width: 870px)').matches){
     if (window.matchMedia('(min-width: 350px)').matches){
