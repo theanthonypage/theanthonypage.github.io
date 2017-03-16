@@ -105,7 +105,7 @@ $('.menu-link').click(function(){
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','2000px');
+        $('#menu').css('min-height','2100px');
     } else { 
         $('#menu').css('min-height','1274px');
       }
@@ -145,7 +145,7 @@ $("#menu-select").change(function() {
 } else if (whichMenu == 'bar'){
     $(target).load('/bar-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','2000px');
+        $('#menu').css('min-height','2100px');
     } else { 
         $('#menu').css('min-height','1274px');
       }
