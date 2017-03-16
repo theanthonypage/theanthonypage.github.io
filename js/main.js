@@ -91,7 +91,7 @@ $('.menu-link').click(function(){
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
-        $('#menu').css('min-height','1800px');
+        $('#menu').css('min-height','2000px');
       } else { 
         $('#menu').css('min-height','2475px');
       }
@@ -151,7 +151,7 @@ $("#menu-select").change(function() {
     $(target).load('/bar-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
-        $('#menu').css('min-height','1800px');
+        $('#menu').css('min-height','2000px');
       } else { 
         $('#menu').css('min-height','2475px');
       }
