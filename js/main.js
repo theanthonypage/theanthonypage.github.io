@@ -35,11 +35,11 @@ console.log(time);
 if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
-  $("#menu-select").val('1');
+  $("#menu-select").val('lunch');
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
-  $("#menu-select").val('2')
+  $("#menu-select").val('dinner')
   if (window.matchMedia('(max-width: 870px)').matches){
     if (window.matchMedia('(min-width: 350px)').matches){
       $('#menu').css('min-height','5250px');
