@@ -113,7 +113,7 @@ $('.menu-link').click(function(){
 		$(target).load('/catering-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    $('#menu').css('min-height','1250px');
+    $('#menu').css('min-height','1275px');
 	} else {
 		$(target).load('/wine-menu.html');
     $(this).addClass('activated');
@@ -151,7 +151,7 @@ $("#menu-select").change(function() {
       }
 } else if (whichMenu == 'catering'){
     $(target).load('/catering-menu.html');
-    $('#menu').css('min-height','1250px');
+    $('#menu').css('min-height','1275px');
 } else {
     $(target).load('/wine-menu.html');
 }
