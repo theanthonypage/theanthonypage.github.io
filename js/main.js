@@ -63,24 +63,24 @@ $('.menu-link').click(function(){
 		$(target).load('/lunch-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5700px');
-    } else if (window.matchMedia('(max-width: 350px)').matches) {
+      if (window.matchMedia('(max-width: 350px)').matches) {
         $('#menu').css('min-height','5950px');
-    } else { 
+      } else if (window.matchMedia('(max-width: 870px)').matches) {
+        $('#menu').css('min-height','5700px');
+      else { 
         $('#menu').css('min-height','3150px');
       }
 	} else if (whichMenu == 'dinner'){
 		$(target).load('/dinner-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5200px');
-    } else if (window.matchMedia('(max-width: 350px)').matches) {
+    if (window.matchMedia('(max-width: 350px)').matches) {
         $('#menu').css('min-height','5450px');
+    } else if (window.matchMedia('(max-width: 870px)').matches) {
+        $('#menu').css('min-height','5800px');
     } else { 
         $('#menu').css('min-height','3082px');
-      }
+    }
 	} else if (whichMenu == 'bar'){
 		$(target).load('/bar-menu.html');
     $(this).addClass('activated');
