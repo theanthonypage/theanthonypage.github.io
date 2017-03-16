@@ -32,13 +32,13 @@ console.log(time);
 if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
-  $('#lunch-m')$.append($('<option>', {
+  $('#lunch-m').append($('<option>', {
     selected: selected;
   }));
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
-  $('#dinner-m')$.append($('<option>', {
+  $('#dinner-m').append($('<option>', {
     selected: selected;
   }));
   if (window.matchMedia('(max-width: 870px)').matches){
