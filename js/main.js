@@ -32,19 +32,15 @@ console.log(time);
 if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
-  if (window.matchMedia('(max-width: 870px)').matches){
-    if (window.matchMedia('(min-width: 350px)').matches){
-      $('#menu').css('min-height','5500px');
-    } else { 
-      $('#menu').css('min-height','5800px');
-    }
-  } else {
-     $('#menu').css('min-height','3082px');
-  }
-
+  $('#lunch-m')$.append($('<option>', {
+    selected: selected;
+  }));
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
+  $('#dinner-m')$.append($('<option>', {
+    selected: selected;
+  }));
   if (window.matchMedia('(max-width: 870px)').matches){
     if (window.matchMedia('(min-width: 350px)').matches){
       $('#menu').css('min-height','5250px');
