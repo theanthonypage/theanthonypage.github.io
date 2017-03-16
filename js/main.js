@@ -34,7 +34,7 @@ if (time < 16){
   $('#lunch').addClass('activated');
   if (window.matchMedia('(max-width: 870px)').matches){
     if (window.matchMedia('(min-width: 350px)').matches){
-      $('#menu').css('min-height','5500px');
+      $('#menu').css('min-height','5200px');
     } else { 
       $('#menu').css('min-height','5800px');
     }
