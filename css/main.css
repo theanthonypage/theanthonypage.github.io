@@ -290,7 +290,7 @@ a:hover {
 	padding-bottom:.5px;
 }
 
-/* .social-media {
+.social-media {
 	float:right;
 	padding-right:30px;
 	padding-left:0;
@@ -300,9 +300,9 @@ a:hover {
 .social-logo {
 	margin: 0 .2em;
 	max-width:38px;
-} */
+}
 
- #hero {
+/* #hero {
 	background-image:url(/images/mainimage.jpg);
   	background-size:cover;
   	position:relative;
@@ -313,7 +313,7 @@ a:hover {
 	background-image:url(/images/mobilemain.gif);
   	background-size:cover;
   	position:relative;
-}
+} */
 
 @media(max-width:700px) {
 	#hero {
