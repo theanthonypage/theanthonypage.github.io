@@ -42,10 +42,10 @@ if (time < 16){
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
-  if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','5200px');
-  } else if (window.matchMedia('(max-width: 350px)').matches) {
+    if (window.matchMedia('(max-width: 350px)').matches) {
         $('#menu').css('min-height','5450px');
+  } else if (window.matchMedia('(max-width: 870px)').matches) {
+        $('#menu').css('min-height','5800px');
   } else { 
         $('#menu').css('min-height','3082px');
     }
