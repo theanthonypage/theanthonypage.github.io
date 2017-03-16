@@ -27,20 +27,21 @@ $(window).on('load', function() {
 
 var objDate = new Date();
 var time = objDate.getHours();
+var dinnerValue  = localStorage.getItem("dinner");
+var lunchValue  = localStorage.getItem("lunch");
+
 console.log(time);
 
 if (time < 16){
 	$('#target').load('/lunch-menu.html');
   $('#lunch').addClass('activated');
-  $('#lunch-m').append($('<option>', {
-    selected: 'selected'
-  }));
+  $("#menu-select").val(lunchValue)
+  .find("option[value=" + lunchValue +"]").attr('selected', true);
 } else if (time >= 16){
 	$('#target').load('/dinner-menu.html');
   $('#dinner').addClass('activated');
-  $('#dinner-m').append($('<option>', {
-    selected: 'selected'
-  }));
+  $("#menu-select").val(dinnerValue)
+  .find("option[value=" + dinnerValue +"]").attr('selected', true);
   if (window.matchMedia('(max-width: 870px)').matches){
     if (window.matchMedia('(min-width: 350px)').matches){
       $('#menu').css('min-height','5250px');
