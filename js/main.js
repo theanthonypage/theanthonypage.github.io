@@ -104,9 +104,9 @@ $('.menu-link').click(function(){
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
-        $('#menu').css('min-height','1400px');
+        $('#menu').css('min-height','1500px');
       } else { 
-        $('#menu').css('min-height','1600px');
+        $('#menu').css('min-height','1700px');
       }
     } else {
       $('#menu').css('min-height','1200px');
