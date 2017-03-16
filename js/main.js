@@ -35,7 +35,7 @@ if (time < 16){
   if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5700px');
   } else if (window.matchMedia('(max-width: 350px)').matches) {
-        $('#menu').css('min-height','5900px');
+        $('#menu').css('min-height','5950px');
   } else { 
         $('#menu').css('min-height','3150px');
     }
@@ -45,7 +45,7 @@ if (time < 16){
   if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5200px');
   } else if (window.matchMedia('(max-width: 350px)').matches) {
-        $('#menu').css('min-height','5400px');
+        $('#menu').css('min-height','5450px');
   } else { 
         $('#menu').css('min-height','3082px');
     }
@@ -66,7 +66,7 @@ $('.menu-link').click(function(){
     if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5700px');
     } else if (window.matchMedia('(max-width: 350px)').matches) {
-        $('#menu').css('min-height','5900px');
+        $('#menu').css('min-height','5950px');
     } else { 
         $('#menu').css('min-height','3150px');
       }
@@ -77,7 +77,7 @@ $('.menu-link').click(function(){
     if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5200px');
     } else if (window.matchMedia('(max-width: 350px)').matches) {
-        $('#menu').css('min-height','5400px');
+        $('#menu').css('min-height','5450px');
     } else { 
         $('#menu').css('min-height','3082px');
       }
@@ -113,6 +113,8 @@ $("#menu-select").change(function() {
     $(target).load('/lunch-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5700px');
+    } else if (window.matchMedia('(max-width: 350px)').matches) {
+        $('#menu').css('min-height','5950px');
     } else { 
         $('#menu').css('min-height','3150px');
       }
@@ -120,6 +122,8 @@ $("#menu-select").change(function() {
     $(target).load('/dinner-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5200px');
+    } else if (window.matchMedia('(max-width: 350px)').matches) {
+        $('#menu').css('min-height','5450px');
     } else { 
         $('#menu').css('min-height','3082px');
       }
