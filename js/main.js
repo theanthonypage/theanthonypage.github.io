@@ -67,7 +67,7 @@ $('.menu-link').click(function(){
         $('#menu').css('min-height','5950px');
       } else if (window.matchMedia('(max-width: 870px)').matches) {
         $('#menu').css('min-height','5700px');
-      else { 
+      } else { 
         $('#menu').css('min-height','3150px');
       }
 	} else if (whichMenu == 'dinner'){
