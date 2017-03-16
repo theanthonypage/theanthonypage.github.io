@@ -243,7 +243,7 @@ a:hover {
 
 /*------ HEADER / NAVBAR ------*/
 
-.header-bar {
+/* .header-bar {
 	position:fixed;
 	height: 80px;
 	width:100%;
@@ -270,7 +270,7 @@ a:hover {
 	margin-top:2.5em;
 	margin-left:12%;
 	display:inline-block;
-}
+} */
 
 .main-nav li {
 	display:inline-block;
@@ -290,7 +290,7 @@ a:hover {
 	padding-bottom:.5px;
 }
 
-.social-media {
+/* .social-media {
 	float:right;
 	padding-right:30px;
 	padding-left:0;
@@ -300,9 +300,9 @@ a:hover {
 .social-logo {
 	margin: 0 .2em;
 	max-width:38px;
-} 
+}
 
-/* #hero {
+ #hero {
 	background-image:url(/images/mainimage.jpg);
   	background-size:cover;
   	position:relative;
@@ -479,7 +479,6 @@ a:hover {
 
 	.burger-bun {
 		max-width:50px;
-		float:right;
 	}
 }
 
