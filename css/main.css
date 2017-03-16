@@ -422,6 +422,10 @@ a:hover {
 	.page-title {
 		font-size:3em;
 	}
+
+	#menu {
+		min-height:3000px;
+	}
 }
 
 @media(max-width:350px){
