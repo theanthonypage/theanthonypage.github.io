@@ -94,7 +94,11 @@ $('.menu-link').click(function(){
 		$(target).load('/catering-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    $('#menu').css('min-height','1310px');
+    if (window.matchMedia('(max-width: 870px)').matches) {
+        $('#menu').css('min-height','2100px');
+      } else {
+        $('#menu').css('min-height','1310px');
+      }
 	} else {
 		$(target).load('/wine-menu.html');
     $(this).addClass('activated');
