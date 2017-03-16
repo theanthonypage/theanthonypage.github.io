@@ -53,6 +53,37 @@
  <!-- UI JS file -->
  <script async src="/js/photoswipe-ui-default.min.js" type="text/javascript"></script>
 
+ <script type="text/javascript">
+function fullscreen(){
+        jQuery('#hero').css({
+            width: jQuery(window).width(),
+            height: jQuery(window).height()
+        });
+    }
+  
+    fullscreen();
+
+  // Run the function in case of window resize
+  jQuery(window).resize(function() {
+       fullscreen();         
+    });
+
+function fullscreen2(){
+        jQuery('#mobile-hero').css({
+            width: jQuery(window).width(),
+            height: jQuery(window).height()
+        });
+    }
+  
+    fullscreen2();
+
+  // Run the function in case of window resize
+  jQuery(window).resize(function() {
+       fullscreen2();         
+    });
+
+</script>
+
  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     <!-- Background of PhotoSwipe. 
