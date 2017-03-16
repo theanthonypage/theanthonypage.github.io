@@ -37,6 +37,7 @@ function fullscreen2(){
 
 $('.site-title').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 600);
+    $('.nav-link').removeClass('activate');
 });
 
 
