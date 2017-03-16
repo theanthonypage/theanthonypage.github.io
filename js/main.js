@@ -159,6 +159,7 @@ $("#menu-select").change(function() {
       $('#menu').css('min-height','1200px');
     }
 } else if (whichMenu == 'catering'){
+    $(target).load('/catering-menu.html');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
         $('#menu').css('min-height','1500px');
