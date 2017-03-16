@@ -422,10 +422,6 @@ a:hover {
 	.page-title {
 		font-size:3em;
 	}
-
-	#menu {
-		min-height:5600px;
-	}
 }
 
 @media(max-width:350px){
@@ -504,6 +500,7 @@ a:hover {
 
 #menu {
 	overflow:hidden;
+	min-height:1200px;
 }
 
 .menu-nav {
