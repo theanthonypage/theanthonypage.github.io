@@ -93,7 +93,7 @@ $('.menu-link').click(function(){
       if (window.matchMedia('(min-width: 350px)').matches){
         $('#menu').css('min-height','1800px');
       } else { 
-        $('#menu').css('min-height','2400px');
+        $('#menu').css('min-height','2475px');
       }
     } else {
       $('#menu').css('min-height','1200px');
@@ -153,7 +153,7 @@ $("#menu-select").change(function() {
       if (window.matchMedia('(min-width: 350px)').matches){
         $('#menu').css('min-height','1800px');
       } else { 
-        $('#menu').css('min-height','2400px');
+        $('#menu').css('min-height','2475px');
       }
     } else {
       $('#menu').css('min-height','1200px');
