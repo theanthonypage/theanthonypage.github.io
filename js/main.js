@@ -89,6 +89,7 @@ $('.menu-link').click(function(){
       }
     } else {
       $('#menu').css('min-height','3082px');
+    }
 	} else if (whichMenu == 'bar'){
 		$(target).load('/bar-menu.html');
     $(this).addClass('activated');
