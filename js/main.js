@@ -91,7 +91,7 @@ $('.menu-link').click(function(){
     $(this).siblings().not(this).removeClass('activated');
     if (window.matchMedia('(max-width: 870px)').matches){
       if (window.matchMedia('(min-width: 350px)').matches){
-        $('#menu').css('min-height','1590px');
+        $('#menu').css('min-height','1800px');
       } else { 
         $('#menu').css('min-height','2400px');
       }
