@@ -27,7 +27,7 @@
 
 /*------LAYOUT------*/
 
-html {
+/* html {
 	height:100%;
 	background:url('/images/brickwall.png');
 } 
@@ -41,7 +41,7 @@ body {
   	color: black;
   	font-size: 16px;
   	background:url('/images/brickwall.png');
-}
+} */
 
 p {
 	text-align:left;
@@ -243,7 +243,7 @@ a:hover {
 
 /*------ HEADER / NAVBAR ------*/
 
-.header-bar {
+/* .header-bar {
 	position:fixed;
 	height: 80px;
 	width:100%;
@@ -251,7 +251,7 @@ a:hover {
 	color:white;
 	font-family:robotoRegular;
 	z-index:1000;
-}
+} 
 
 .site-title {
 	float:left;
@@ -264,7 +264,7 @@ a:hover {
     margin: -.25em 0 0 .5em;
     max-width:165px;
     display:none;
-}
+} */
 
 .navbar {
 	margin-top:2.5em;
@@ -302,7 +302,7 @@ a:hover {
 	max-width:38px;
 }
 
-#hero {
+/* #hero {
 	background-image:url(/images/mainimage.jpg);
   	background-size:cover;
   	position:relative;
@@ -313,7 +313,7 @@ a:hover {
 	background-image:url(/images/mobilemain.gif);
   	background-size:cover;
   	position:relative;
-}
+} */
 
 @media(max-width:700px) {
 	#hero {
