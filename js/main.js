@@ -94,20 +94,28 @@ $('.menu-link').click(function(){
 		$(target).load('/bar-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','2100px');
-    } else { 
-        $('#menu').css('min-height','1274px');
+    if (window.matchMedia('(max-width: 870px)').matches){
+      if (window.matchMedia('(min-width: 350px)').matches){
+        $('#menu').css('min-height','1590px');
+      } else { 
+        $('#menu').css('min-height','2400px');
       }
+    } else {
+      $('#menu').css('min-height','1200px');
+    }
 	} else if (whichMenu == 'catering'){
 		$(target).load('/catering-menu.html');
     $(this).addClass('activated');
     $(this).siblings().not(this).removeClass('activated');
-    if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','2100px');
-      } else {
-        $('#menu').css('min-height','1310px');
+    if (window.matchMedia('(max-width: 870px)').matches){
+      if (window.matchMedia('(min-width: 350px)').matches){
+        $('#menu').css('min-height','1400px');
+      } else { 
+        $('#menu').css('min-height','1600px');
       }
+    } else {
+      $('#menu').css('min-height','1200px');
+    }
 	} else {
 		$(target).load('/wine-menu.html');
     $(this).addClass('activated');
@@ -146,11 +154,15 @@ $("#menu-select").change(function() {
     }
 } else if (whichMenu == 'bar'){
     $(target).load('/bar-menu.html');
-    if (window.matchMedia('(max-width: 870px)').matches) {
-        $('#menu').css('min-height','2100px');
-    } else { 
-        $('#menu').css('min-height','1274px');
+    if (window.matchMedia('(max-width: 870px)').matches){
+      if (window.matchMedia('(min-width: 350px)').matches){
+        $('#menu').css('min-height','1590px');
+      } else { 
+        $('#menu').css('min-height','2400px');
       }
+    } else {
+      $('#menu').css('min-height','1200px');
+    }
 } else if (whichMenu == 'catering'){
     $(target).load('/catering-menu.html');
     $('#menu').css('min-height','1310px');
