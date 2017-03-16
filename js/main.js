@@ -4,34 +4,6 @@ $(document).ready(function(){
 
 // HERO IMAGE
 
-function fullscreen(){
-        jQuery('#hero').css({
-            width: jQuery(window).width(),
-            height: jQuery(window).height()
-        });
-    }
-  
-    fullscreen();
-
-  // Run the function in case of window resize
-  jQuery(window).resize(function() {
-       fullscreen();         
-    });
-
-function fullscreen2(){
-        jQuery('#mobile-hero').css({
-            width: jQuery(window).width(),
-            height: jQuery(window).height()
-        });
-    }
-  
-    fullscreen2();
-
-  // Run the function in case of window resize
-  jQuery(window).resize(function() {
-       fullscreen2();         
-    });
-
 
 // CASSANO LINK ONCLICK SCROLL TO TOP
 
