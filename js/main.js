@@ -121,7 +121,7 @@ $('.menu-link').click(function(){
 
 // #MENU OVERFLOW VISIBLE ON MAX WIDTH
  
- if (window.matchMedia('(max-width: 400px)').matches){
+ if (window.matchMedia('(max-width: 870px)').matches){
   $('#menu').css('overflow', 'visible');
 } else {
 
