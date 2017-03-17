@@ -597,7 +597,7 @@ a:hover {
 	}
 
 	#menu {
-		overflow:visible;
+		overflow:visible!important;
 	}
 }
 
