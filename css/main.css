@@ -595,6 +595,10 @@ a:hover {
 	.menu-selector {
 		display:block;
 	}
+
+	#menu {
+		overflow:visible;
+	}
 }
 
 .menu-category {
