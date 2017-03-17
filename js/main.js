@@ -119,6 +119,15 @@ $('.menu-link').click(function(){
  });
 
 
+// #MENU OVERFLOW VISIBLE ON MAX WIDTH
+ 
+ if (window.matchMedia('(max-width: 400px)').matches){
+  $('#menu').css('overflow', 'visible');
+} else {
+
+};
+
+
 // LOAD MOBILE MENUS ON CLICK
 
 $("#menu-select").change(function() {
