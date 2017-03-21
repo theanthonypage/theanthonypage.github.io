@@ -74,9 +74,9 @@ permalink: "index.html"
 	<div class="reservation-booker">
 		<form action="https://formspree.io/cassanoristorante@gmail.com"
       	method="POST">
-			<input type='text' name='Date' class='datepicker-here' data-language='en' data-inline='true' /><br />
+			<input type='text' name='Date' class='datepicker-here' data-language='en' data-inline='true' required/><br />
 			<label text="Guests" class="bold">Number of Guests</label> &nbsp; &nbsp; &nbsp;
-			<select name="guests">
+			<select name="guests" required>
   				<option value="1">1</option>
   				<option value="2">2</option>
   				<option value="3">3</option>
@@ -89,7 +89,7 @@ permalink: "index.html"
 
 			
 			<label text="Time" class="bold">Time</label>&nbsp; &nbsp;
-			<select name="Hour">
+			<select name="Hour" required>
   				<option value="12" class="mon-fri">12</option>
   				<option value="1" class="mon-fri">1</option>
   				<option value="2" class="mon-fri">2</option>
@@ -103,7 +103,7 @@ permalink: "index.html"
   				<option value="10" class="fri-sat">10</option>
 			</select>&nbsp;
 
-			<select name="Minutes">
+			<select name="Minutes" required>
   				<option value="00">00</option>
   				<option value="15">15</option>
   				<option value="30">30</option>
@@ -113,18 +113,18 @@ permalink: "index.html"
 
 
 			<label text="First Name" class="bold">First Name</label>&nbsp; &nbsp;
-			<input type"text" name="firstName"><br />
+			<input type"text" name="firstName" required><br />
 
 			<label text="Last Name" class="bold">Last Name</label>&nbsp; &nbsp;
-			<input type="text" name="lastName"><br />
+			<input type="text" name="lastName" required><br />
 
-			<label text="Email" class="bold">Email </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<label text="Email" class="bold" required>Email </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 			<input type="email" name="Email Address"><br />
 
-			<label text="phoneNumber" class="bold">Phone Number</label>&nbsp; &nbsp;
+			<label text="phoneNumber" class="bold" required>Phone Number</label>&nbsp; &nbsp;
 			<input type="text" max-length="10" size="17" name="Phone Number"><br /><br />
 
-			<label text="phoneNumber" class="bold">Reservation Notes</label><br />
+			<label text="phoneNumber" class="bold" required>Reservation Notes</label><br />
 			<textarea max-length="99" rows="4" cols="30" name="Reservation Notes"></textarea><br />
 			<p class="smallest center regular" style="padding:2em;">Please note that your reservation is not confirmed until you have been contacted via phone or email by one of our hosts.</p><br />
 
