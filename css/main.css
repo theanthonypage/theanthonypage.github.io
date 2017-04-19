@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Creepster);
+
 
 * {
 	box-sizing: border-box; /* check prefixes, this will make the border be included in the width of an element */
@@ -6,7 +6,7 @@
 
 
 body {
-  font-family: 'Tahoma', serif;
+  font-family: 'Tahoma', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #333;
@@ -80,7 +80,6 @@ a:hover {
 	}
 }
 .site-title { 
-	font-family:'Creepster';
 	font-size:2em;
 	margin-left:.25em;
 	color:#005252;
@@ -94,9 +93,7 @@ a:hover {
 }
 
 .site-title:hover {
-	background-color:#005252;
-	color:white;
-	font-weight:normal;
+	opacity:.6;
 }
 
 /* Navigation */
