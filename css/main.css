@@ -129,13 +129,12 @@ a:hover {
 }
 
 .nav-link {
-	background-color:#005252;
 	border-radius:.75em;
 	padding-left:.5em;
 	padding-right:.5em;
 	padding-top:.25em;
 	padding-bottom:.25em;
-	color:white;
+	color:black;
 	margin-right:.5em;
 	margin-left:.25em;
 	text-decoration:none;
@@ -143,13 +142,11 @@ a:hover {
 }
 
 .nav-link:hover {
-	background-color:white;
-	color:#005252;
+	opacity:.6;
 }
 
 .nav-link.active {
-	background-color:tomato;
-	color:white;
+	text-decoration:underline;
 }
 
 .nav-link.active:hover {
