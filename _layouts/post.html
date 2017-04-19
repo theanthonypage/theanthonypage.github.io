@@ -1,0 +1,12 @@
+{% include head.html %}
+{% include header.html %}
+
+
+ <div class="main-content">
+ 	<div class="container">
+ 		{% if page.image %}<img src="{{page.image}}" alt="">{% else %} Nope, no image.{% endif %}
+ 		<h1>Blog post: {{page.title}}</h1>
+		{{ content }}
+	</div>
+</div>
+{% include footer.html %}

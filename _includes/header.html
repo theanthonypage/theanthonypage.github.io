@@ -1,45 +1,14 @@
-
 <header class="site-header cf">
-<div class="header-bar">
-<a class="site-title"><img class="site-logo" src="/images/logowhite.png" alt="Cassano Logo"></a>
-  <a class="burger-bun"><img class="hamburger" src="/images/hamburger.png"></a>
-  <a><img class="close" src="/images/x.png"></a>
-  <div class="social-media">
-    <a class="social-link" href="https://www.facebook.com/CassanoRistorante" target="_blank"><img src="/images/facebook42.png" class="social-logo"></a>
-    <a class="social-link" href="https://www.instagram.com/cassanoristorante/?hl=en" target="_blank"><img src="/images/instagram42.png" class="social-logo"></a>
-  </div>
+    <div class="container">
+        <a class="site-title" href="{{site.url}}">{{ site.title }}</a>
         <nav class="navbar">
-            <ul class="main-nav">
-                <li><a class="nav-link" href="#menu">MENUS</a></li>
-                <li><a class="nav-link" href="#about">ABOUT</a></li>
-                <li><a class="nav-link gallery-click" href="#gallery">GALLERY</a></li>
-                <li><a class="nav-link" href="#reservations">RESERVATIONS</a></li>
-                <li><a class="nav-link" href="#find-us">FIND US</a></li>
+            <ul class="header-nav">
+                {% for nav in site.pages %}
+                    {% if nav.title %}
+                        <li><a class="nav-link{% if nav.title == page.title %} active{% endif %}" href="{{ nav.url }}">{{ nav.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </nav>
-    <ul class="mobile-nav bold">
-      <li><a class="m-nav-link" href="#menu">MENUS</a></li>
-      <li><a class="m-nav-link" href="#about">ABOUT</a></li>
-      <li><a class="m-nav-link gallery-click" href="#gallery">GALLERY</a></li>
-      <li><a class="m-nav-link" href="#reservations">RESERVATIONS</a></li>
-      <li><a class="m-nav-link" href="#find-us">FIND US</a></li>
-    </ul>
-</div>
-
-
-
-<div id="hero">
-	<div class="main-logo-holder">
-		<img class="main-logo cf" src="/images/centerlogo.png">
-	</div>
-</div>
-<div id="mobile-hero">
-
-
-<div class="main-logo-holder">
-    <img class="main-logo cf" src="/images/centerlogo.png">
-</div>
-<div class="main-logo-holder">
-</div>
-</header>
-
+    </div> <!-- / container -->
+</header><!-- / header -->
