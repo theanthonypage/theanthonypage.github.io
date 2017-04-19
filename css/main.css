@@ -48,7 +48,12 @@ a:hover {
 
 }
 
-/* Layout */
+/* --- LAYOUT --- */
+
+.small {
+	font-size: .7em;
+}
+
 .container {
 	max-width: 1000px; /* max-width will scale to the browser, while just `width` will always be the value */
 	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */
@@ -63,7 +68,7 @@ a:hover {
 }
 
 .site-header {
-	padding:2em 0;
+	padding:.5em 0;
 	background-color:white;
 }
 
