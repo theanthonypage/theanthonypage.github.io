@@ -54,6 +54,10 @@ a:hover {
 	font-size: .7em;
 }
 
+.fl-left {
+	float:left;
+}
+
 .container {
 	max-width: 1000px; /* max-width will scale to the browser, while just `width` will always be the value */
 	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */
@@ -89,13 +93,7 @@ a:hover {
 .site-title { 
 	font-size:2em;
 	margin-left:.25em;
-	color:#005252;
 	text-decoration:none;
-	border-radius:.75em;
-	padding-left:.25em;
-	padding-right:.25em;
-	padding-top:.1em;
-	padding-bottom:.1em;
 	font-weight:normal;
 }
 
